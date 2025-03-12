@@ -5,6 +5,8 @@ import MobileMenu from "./mobile-menu";
 import Tabs from "./tabs";
 import Video from "./video";
 import Form from "./form";
+import Overflow from "./overflow";
+import Menu from "./menu";
 
 class App {
     constructor() {
@@ -18,8 +20,9 @@ class App {
         this.createMobileMenu()
         this.createShowMore()
         this.createTabs()
-        this.createVideo()
         this.createForm()
+        this.createOverflow()
+        this.createMenu()
     }
     
     createSlider = () => {
@@ -89,21 +92,26 @@ class App {
         })
     }
     
-    createVideo = () => {
-        const videos = document.querySelectorAll('[data-video]');
-        if (!videos) return
-        
-        videos.forEach(video => {
-            new Video(video)
-        })
-    }
-    
     createForm = () => {
         const forms = document.querySelectorAll('.form');
         if (!forms) return
         forms.forEach(form => {
             new Form(form)
         })
+    }
+    
+    createOverflow = () => {
+        const overflowElements = document.querySelectorAll('[data-overflow]');
+        if (!overflowElements) return
+        overflowElements.forEach(overflowElement => {
+            new Overflow(overflowElement)
+        })
+    }
+    
+    createMenu = () => {
+        const menu = document.querySelector('[data-menu]');
+        if (!menu) return
+        new Menu(menu)
     }
 }
 

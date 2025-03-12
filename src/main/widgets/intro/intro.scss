@@ -1,0 +1,20 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 60px;
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      @include coverFull();
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.top-menu {
+  padding: 20px 0 16px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: $violet;
+
+    svg {
+      display: flex;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

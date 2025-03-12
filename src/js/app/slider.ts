@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import {EffectCoverflow, Navigation, Pagination, Thumbs} from "swiper/modules";
+import {Autoplay, EffectCoverflow, Navigation, Pagination, Thumbs} from "swiper/modules";
 
 class Slider {
     el;
@@ -12,15 +12,17 @@ class Slider {
     mobileOnly;
     media;
     isAuto;
+    offset;
     
     constructor(el: Element) {
         this.el = el;
         this.sliderType = this.el.getAttribute('data-slider');
         this.slidesCount = this.el.getAttribute('data-slides')
         this.isAuto = this.el.hasAttribute('data-auto');
+        this.offset = this.el.hasAttribute('data-offset');
         
-        this.buttonPrev = this.el.querySelector('.swiper-btn-prev');
-        this.buttonNext = this.el.querySelector('.swiper-btn-next');
+        this.buttonPrev = this.el.querySelector('.swiper-btn--prev');
+        this.buttonNext = this.el.querySelector('.swiper-btn--next');
         this.pagination = this.el.querySelector('.swiper-pagination');
         
         this.media = matchMedia('(max-width: 1199px)');
@@ -32,6 +34,9 @@ class Slider {
     
     init() {
         switch (this.sliderType) {
+        case 'intro':
+            this.initIntroSlider();
+            break;
         case 'default':
             this.initDefaultSlider();
             break;
@@ -50,10 +55,10 @@ class Slider {
         }
     }
     
-    initDefaultSlider() {
+    initIntroSlider() {
         const slider = this.el.querySelector('.swiper');
         new Swiper(slider, {
-            modules: [Navigation, Pagination],
+            modules: [Navigation, Pagination, Autoplay],
             slidesPerView: this.slidesCount ? this.slidesCount : 1,
             spaceBetween: 35,
             watchSlidesProgress: true,
@@ -62,9 +67,46 @@ class Slider {
                 nextEl: this.buttonNext,
                 disabledClass: 'slider__btn--disabled'
             },
+            autoplay: {
+              delay: 6000,
+            },
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+            },
+            on: {
+                slideChangeTransitionStart: () => {
+                    const wrapper = slider.querySelector('.swiper-wrapper') as HTMLElement;
+                    
+                    wrapper.style.transitionTimingFunction = 'ease';
+                    wrapper.style.transitionDuration = '0.95s';
+                }
+            }
+        })
+    }
+    
+    initDefaultSlider() {
+        const slider = this.el.querySelector('.swiper');
+        new Swiper(slider, {
+            modules: [Navigation, Pagination, Autoplay],
+            slidesPerView: this.slidesCount ? this.slidesCount : 1,
+            spaceBetween: this.offset ? this.offset : 40,
+            navigation: {
+                prevEl: this.buttonPrev,
+                nextEl: this.buttonNext,
+                disabledClass: 'slider__btn--disabled'
+            },
+            autoplay: this.isAuto ? {delay: 3000} : undefined,
+            loop: this.isAuto ? this.isAuto : false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            on: {
+                init: (swiper: Swiper) => {
+                    swiper.update()
+                }
             }
         })
     }

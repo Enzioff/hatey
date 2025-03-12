@@ -1,0 +1,40 @@
+.search {
+  display: grid;
+  grid-template-columns: minmax(240px, 472px);
+
+  &__block {
+    display: flex;
+    padding: 8px 10px;
+    background-color: $bg;
+    border: 1px solid $gray-border;
+    border-radius: 10px;
+  }
+
+  &__input {
+    display: flex;
+    flex-grow: 1;
+    padding-left: 10px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: $black;
+
+    &::placeholder {
+      color: $gray-black;
+    }
+  }
+
+  &__button {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    svg {
+      display: flex;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

@@ -18,3 +18,4 @@ import "./icon-star.svg";
 import "./icon-suit.svg";
 import "./icon-tel.svg";
 import "./icon-zap.svg";
+import "./icon-cart-btn.svg";

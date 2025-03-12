@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 9px 20px;
+  border-radius: 22px;
+  background: $grad-blue;
+  cursor: pointer;
+
+  span {
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  svg {
+    display: flex;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    fill: $white;
+  }
+
+  &--slim {
+    padding: 8px 16px;
+  }
+}

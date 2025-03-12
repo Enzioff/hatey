@@ -1,3 +1,21 @@
 .header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 
+  &__wrapper {
+    position: relative;
+    background-color: $white;
+    box-shadow: 0 4px 50px 0 #0000000D;
+    border-radius: 10px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #ECEFF1;
+  }
 }

@@ -1,0 +1,25 @@
+.tag {
+  display: flex;
+  padding: 5px 12px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  color: $white;
+
+  border-radius: 3px;
+  background-color: $blue;
+
+
+  &--in_stock {
+    background-color: $green;
+  }
+
+  &--recommended {
+    background-color: $purple;
+  }
+
+  &--popular {
+    background-color: $red;
+  }
+}

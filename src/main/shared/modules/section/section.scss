@@ -1,3 +1,10 @@
 .section {
+  padding: 70px 0;
 
+  &--intro {
+    padding: 0;
+  }
+  &--light {
+    background-color: $white;
+  }
 }

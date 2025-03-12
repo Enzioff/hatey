@@ -1,0 +1,18 @@
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__icon {
+    display: flex;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+  }
+}

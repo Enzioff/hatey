@@ -1,0 +1,47 @@
+.contact-element {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &--center {
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: $black;
+
+    &--bold {
+      font-size: 24px;
+      line-height: 100%;
+    }
+
+    &--underline {
+      text-decoration: underline;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    fill: $red-light;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: $blue;
+  }
+}

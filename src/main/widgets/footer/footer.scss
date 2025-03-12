@@ -1,3 +1,114 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 20px;
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding: 40px;
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0 4px 50px 0 #0000000D;
+  }
+
+  &__nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 119px;
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 40px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: $gray-black;
+    transition: .2s linear;
+
+    &:hover {
+      color: $red-dark;
+      text-decoration: underline;
+    }
+
+    &--bold {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      color: $black;
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__mailing {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__seo {
+    display: flex;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: $blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: $blue;
+  }
 }

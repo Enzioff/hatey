@@ -1,0 +1,11 @@
+.posts-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 68px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
