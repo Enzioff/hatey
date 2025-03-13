@@ -1,0 +1,131 @@
+.form-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+  }
+
+  &__icon {
+    display: flex;
+    width: 8px;
+    height: 8px;
+    fill: $black;
+    transform: rotate(90deg);
+    transition: .2s linear;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &.active {
+      gap: 20px;
+
+      .form-filter__categories {
+        height: 100%;
+      }
+
+      .form-filter__icon {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__categories {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 0;
+    overflow: hidden;
+    transition: .2s linear;
+
+    &.show {
+      .form-filter__item {
+        &:nth-child(n+6) {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &:nth-child(n+6) {
+      display: none;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 100%;
+      color: $gray-black;
+    }
+  }
+
+  &__color {
+    display: flex;
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $white;
+    border: 1px solid rgba($gray-black, .3);
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  &__reset {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+    &.visible {
+      display: flex;
+    }
+
+    svg {
+      display: flex;
+      width: 6px;
+      height: 6px;
+    }
+
+    span {
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $blue;
+    }
+  }
+}

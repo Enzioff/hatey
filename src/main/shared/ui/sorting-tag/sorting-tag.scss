@@ -1,0 +1,28 @@
+.sorting-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 16px;
+  background-color: $white;
+  border-radius: 25px;
+  border: 1px solid $gray;
+  cursor: pointer;
+  transition: .2s linear;
+
+  &.active {
+    background-color: $red;
+    border-color: $red;
+    .sorting-tag__text {
+      color: $white;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $dark;
+    transition: .2s linear;
+  }
+}

@@ -7,4 +7,10 @@
   &--light {
     background-color: $white;
   }
+
+  &--top-page {
+    margin-top: -10px;
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
 }

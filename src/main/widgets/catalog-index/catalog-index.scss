@@ -1,0 +1,49 @@
+.catalog-index {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 230px;
+    height: 180px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: $white;
+    box-shadow: 0 4px 50px 0 #0000000D;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $dark;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}

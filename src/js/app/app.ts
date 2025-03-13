@@ -7,6 +7,7 @@ import Video from "./video";
 import Form from "./form";
 import Overflow from "./overflow";
 import Menu from "./menu";
+import Filter from "./filter";
 
 class App {
     constructor() {
@@ -23,6 +24,7 @@ class App {
         this.createForm()
         this.createOverflow()
         this.createMenu()
+        this.createFilter()
     }
     
     createSlider = () => {
@@ -112,6 +114,14 @@ class App {
         const menu = document.querySelector('[data-menu]');
         if (!menu) return
         new Menu(menu)
+    }
+    
+    createFilter = () => {
+        const filters = document.querySelectorAll('[data-filter]');
+        if (!filters) return
+        filters.forEach(filter => {
+            new Filter(filter)
+        })
     }
 }
 
