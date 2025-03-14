@@ -238,121 +238,320 @@
     <div class="container">
         <div class="breadcrumbs">
             <a href="#" class="breadcrumbs__link">Главная</a>
-            <span class="breadcrumbs__link">Каталог</span>
+            <span class="breadcrumbs__link">Корзина</span>
         </div>
         <div class="head-block">
-            <h2 class="title">Каталог</h2>
+            <h2 class="title">Корзина</h2>
         </div>
-        <div class="catalog-index">
-            <div class="catalog-index__list">
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-1.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Фасадная плитка</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-2.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Фасадный кирпич</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-3.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Брусчатка и плитка для
-                        мощения</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-4.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Ступени, напольная
-                        плитка, уличные
-                        покрытия</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-5.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Керамические элементы</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-6.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Кровля</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-7.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Сухие смеси</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-8.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Изоляционные
-                        материалы</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-9.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Система навесного
-                        фасада</h3>
-                </a>
+        <form action="#" class="cart-block grid">
+            <div class="cart-block__detail">
+                <div class="cart-block__header">
+                    <p class="cart-block__text">В корзине 2 товара</p>
+                    <button class="cart-block__btn">
+                        <svg class="cart-block__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-cross"></use>
+                        </svg>
+                        <span>Очистить</span>
+                    </button>
+                </div>
+                <div class="cart-block__content">
+                    <article class="article-cart-el">
+                        <picture class="article-cart-el__picture">
+                            <img src="./assets/images/detail-1.png" alt="">
+                        </picture>
+                        <div class="article-cart-el__info">
+                            <a href="#" class="article-cart-el__title">
+                                Клинкер тротуарный темно-красный флэш “Глазго”
+                            </a>
+                            <p class="article-cart-el__text">Вес: 0 кг</p>
+                        </div>
+                        <div class="article-cart-el__detail">
+                            <div class="article-cart-el__meta">
+                                <p class="article-cart-el__price">360,00 ₽</p>
+                                <p class="article-cart-el__text">Цена за 1 шт</p>
+                            </div>
+                            <div class="counter">
+                                <a href="#" class="counter__btn counter__btn--minus">
+                                    <svg class="counter__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-minus"></use>
+                                    </svg>
+                                </a>
+                                <input type="number" class="counter__input" value="1">
+                                <a href="#" class="counter__btn counter__btn--plus">
+                                    <svg class="counter__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-plus"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-cart-el">
+                        <picture class="article-cart-el__picture">
+                            <img src="./assets/images/detail-1.png" alt="">
+                        </picture>
+                        <div class="article-cart-el__info">
+                            <a href="#" class="article-cart-el__title">
+                                Клинкер тротуарный темно-красный флэш “Глазго”
+                            </a>
+                            <p class="article-cart-el__text">Вес: 0 кг</p>
+                        </div>
+                        <div class="article-cart-el__meta">
+                            <p class="article-cart-el__price">360,00 ₽</p>
+                            <p class="article-cart-el__text">Цена за 1 шт</p>
+                        </div>
+                        <div class="counter">
+                            <a href="#" class="counter__btn counter__btn--minus">
+                                <svg class="counter__icon">
+                                    <use xlink:href="./assets/sprite.svg#icon-minus"></use>
+                                </svg>
+                            </a>
+                            <input type="number" class="counter__input" value="1">
+                            <a href="#" class="counter__btn counter__btn--plus">
+                                <svg class="counter__icon">
+                                    <use xlink:href="./assets/sprite.svg#icon-plus"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="editor editor--text">
-                <p>
-                    Успех строительно-ремонтных работ зависит не только от работы мастера, но и от качества используемых
-                    материалов и комплектующих. Поэтому важно купить качественные строительные материалы от проверенных
-                    производителей — только тогда у вас получится добиться желаемого результата при строительстве
-                    дома.<br>
-                    В нашем каталоге представлена продукция от ведущих отечественных и европейских
-                    заводов-производителей, которые давно зарекомендовали себя в сфере производства строительных
-                    материалов — это гарантирует высокое качество продукции.<br>
-                    Вы можете купить строительные материалы
-                    оптом в Калининграде для проведения внутренних или наружных работ при строительстве дома или
-                    оформления придомовой территории. В ассортименте магазина вы найдете:.
-                </p>
-                <br>
-                <ul>
-                    <li>
-                        Плитку для отделки фасадов — клинкерную, сланец, ручной формовки, а также вентилируемые фасады.
+            <div class="cart-block__info">
+                <h3 class="cart-block__title">Ваш заказ</h3>
+                <ul class="cart-block__list">
+                    <li class="cart-block__item">
+                        <p class="cart-block__text">Ваша корзина</p>
+                        <p class="cart-block__text cart-block__text--accent">2 товара</p>
                     </li>
-                    <li>
-                        Кирпич для внешних отделочных работ — клинкерный, керамический и ручной формовки.
-                    </li>
-                    <li>
-                        Материалы для мощения — бетонную плитку и клинкерную брусчатку.
-                    </li>
-                    <li>
-                        Материалы для оформления ступеней, полов и уличных территорий.
-                    </li>
-                    <li>
-                        Керамические элементы, предназначенные для завершающей отделки отдельных элементов дома или ограждений.
-                    </li>
-                    <li>
-                        Материалы для отделки кровли — керамическую и металлочерепицу, сланцевую кровлю, а также аксессуары для кровли.
-                    </li>
-                    <li>
-                        Изоляционные материалы для защиты дома от теплопотерь и скопления влаги.
-                    </li>
-                    <li>
-                        Материалы и комплектующие для системы навесного фасада.
-                    </li>
-                    <li>
-                        Сухие смеси для проведения внутренних и наружных работ.
+                    <li class="cart-block__item">
+                        <p class="cart-block__text">Общая стоимость</p>
+                        <p class="cart-block__text cart-block__text--price">360,00 ₽</p>
                     </li>
                 </ul>
-                <br>
-                <p>
-                    Купить необходимые строительные материалы вы можете как посетив наш магазин лично, так и оформив заказ на нашем сайте. Вы всегда можете связаться с нашим
-                    менеджером по телефону <a href="tel:+74012664222">+7 (4012) 664-222</a> для уточнения деталей заказа или получения консультации по продукции.
-                </p>
+                <div class="cart-block__footer">
+                    <button class="button" type="submit">
+                        <span>перейти к оформлению</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <section class="section">
+    <div class="container">
+        <div class="head-block">
+            <h2 class="title">Вы недавно смотрели</h2>
+        </div>
+        <div class="viewedProducts">
+            <div class="article-product">
+                <div class="article-product__preview">
+                    <picture class="article-product__picture">
+                        <img src="./assets/images/product-5.png" alt="">
+                    </picture>
+                    <div class="article-product__tags">
+                        <div class="tag tag--in_stock">В наличии</div>
+                        <div class="tag tag--recommended">Советуем</div>
+                        <div class="tag">СпецЦена</div>
+                        <div class="tag tag--popular">Хит</div>
+                    </div>
+                </div>
+                <div class="article-product__info">
+                    <h2 class="article-product__title">
+                        Керамическая черепица ROBEN ангроб антрацит
+                    </h2>
+                    <div class="article-product__detail">
+                        <p class="price">360,00 ₽/шт</p>
+                        <a href="#" class="article-product__buy">Купить в 1 клик</a>
+                    </div>
+                    <div class="article-product__footer">
+                        <div class="article-product__meta">
+                            <button class="article-product__functional-button">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                                </svg>
+                            </button>
+                            <button class="article-product__functional-button">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-graph"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="article-product__button button">
+                            <span>Купить</span>
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-cart-btn"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="article-product">
+                <div class="article-product__preview">
+                    <picture class="article-product__picture">
+                        <img src="./assets/images/product-5.png" alt="">
+                    </picture>
+                    <div class="article-product__tags">
+                        <div class="tag tag--in_stock">В наличии</div>
+                        <div class="tag tag--recommended">Советуем</div>
+                        <div class="tag">СпецЦена</div>
+                        <div class="tag tag--popular">Хит</div>
+                    </div>
+                </div>
+                <div class="article-product__info">
+                    <h2 class="article-product__title">
+                        Керамическая черепица ROBEN ангроб антрацит
+                    </h2>
+                    <div class="article-product__detail">
+                        <p class="price">360,00 ₽/шт</p>
+                        <a href="#" class="article-product__buy">Купить в 1 клик</a>
+                    </div>
+                    <div class="article-product__footer">
+                        <div class="article-product__meta">
+                            <button class="article-product__functional-button">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                                </svg>
+                            </button>
+                            <button class="article-product__functional-button">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-graph"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="article-product__button button">
+                            <span>Купить</span>
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-cart-btn"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="article-product">
+                <div class="article-product__preview">
+                    <picture class="article-product__picture">
+                        <img src="./assets/images/product-5.png" alt="">
+                    </picture>
+                    <div class="article-product__tags">
+                        <div class="tag tag--in_stock">В наличии</div>
+                        <div class="tag tag--recommended">Советуем</div>
+                        <div class="tag">СпецЦена</div>
+                        <div class="tag tag--popular">Хит</div>
+                    </div>
+                </div>
+                <div class="article-product__info">
+                    <h2 class="article-product__title">
+                        Керамическая черепица ROBEN ангроб антрацит
+                    </h2>
+                    <div class="article-product__detail">
+                        <p class="price">360,00 ₽/шт</p>
+                        <a href="#" class="article-product__buy">Купить в 1 клик</a>
+                    </div>
+                    <div class="article-product__footer">
+                        <div class="article-product__meta">
+                            <button class="article-product__functional-button">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                                </svg>
+                            </button>
+                            <button class="article-product__functional-button">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-graph"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="article-product__button button">
+                            <span>Купить</span>
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-cart-btn"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="article-product">
+                <div class="article-product__preview">
+                    <picture class="article-product__picture">
+                        <img src="./assets/images/product-5.png" alt="">
+                    </picture>
+                    <div class="article-product__tags">
+                        <div class="tag tag--in_stock">В наличии</div>
+                        <div class="tag tag--recommended">Советуем</div>
+                        <div class="tag">СпецЦена</div>
+                        <div class="tag tag--popular">Хит</div>
+                    </div>
+                </div>
+                <div class="article-product__info">
+                    <h2 class="article-product__title">
+                        Керамическая черепица ROBEN ангроб антрацит
+                    </h2>
+                    <div class="article-product__detail">
+                        <p class="price">360,00 ₽/шт</p>
+                        <a href="#" class="article-product__buy">Купить в 1 клик</a>
+                    </div>
+                    <div class="article-product__footer">
+                        <div class="article-product__meta">
+                            <button class="article-product__functional-button">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                                </svg>
+                            </button>
+                            <button class="article-product__functional-button">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-graph"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="article-product__button button">
+                            <span>Купить</span>
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-cart-btn"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="article-product">
+                <div class="article-product__preview">
+                    <picture class="article-product__picture">
+                        <img src="./assets/images/product-5.png" alt="">
+                    </picture>
+                    <div class="article-product__tags">
+                        <div class="tag tag--in_stock">В наличии</div>
+                        <div class="tag tag--recommended">Советуем</div>
+                        <div class="tag">СпецЦена</div>
+                        <div class="tag tag--popular">Хит</div>
+                    </div>
+                </div>
+                <div class="article-product__info">
+                    <h2 class="article-product__title">
+                        Керамическая черепица ROBEN ангроб антрацит
+                    </h2>
+                    <div class="article-product__detail">
+                        <p class="price">360,00 ₽/шт</p>
+                        <a href="#" class="article-product__buy">Купить в 1 клик</a>
+                    </div>
+                    <div class="article-product__footer">
+                        <div class="article-product__meta">
+                            <button class="article-product__functional-button">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                                </svg>
+                            </button>
+                            <button class="article-product__functional-button">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-graph"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="article-product__button button">
+                            <span>Купить</span>
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-cart-btn"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -20,3 +20,5 @@ import "./icon-tel.svg";
 import "./icon-zap.svg";
 import "./icon-cart-btn.svg";
 import "./icon-cross.svg";
+import "./icon-plus.svg";
+import "./icon-minus.svg";

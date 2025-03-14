@@ -25,6 +25,14 @@
     }
   }
 
+  h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $black;
+  }
+
   &--text {
     li, a, p, span {
       color: $black;

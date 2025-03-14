@@ -11,6 +11,14 @@
   border: 1px solid $gray-border;
   border-radius: 10px;
 
+  &--default {
+    padding: 18px 20px;
+  }
+
+  &--area {
+    min-height: 150px;
+  }
+
   &::placeholder {
     color: $gray-black;
   }

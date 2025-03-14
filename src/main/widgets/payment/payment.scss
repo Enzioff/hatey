@@ -1,0 +1,136 @@
+.payment {
+  &__info {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 30px 40px;
+    height: auto;
+    background-color: $white;
+    border-radius: 10px;
+    border: 1px solid #D9E6EF;
+
+    &--collapse {
+      height: fit-content;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    span {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 100%;
+      color: $gray-black;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $black;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray-black;
+
+    &--accent {
+      color: $green;
+    }
+
+    &--black {
+      color: $black;
+    }
+
+    &--big {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__header {
+    display: block;
+    padding: 30px 40px 20px;
+    border-bottom: 1px solid #D9E6EF;
+  }
+
+  &__total {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: $white;
+    border-radius: 10px;
+    border: 1px solid #D9E6EF;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #D9E6EF;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__agree {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    span {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 100%;
+      color: $gray-black;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    padding: 0 40px 30px;
+  }
+
+  &__button {
+    padding: 20px;
+    border-radius: 100px;
+  }
+}

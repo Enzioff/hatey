@@ -11,6 +11,9 @@
 @import './filter/filter';
 @import './form-filter/form-filter';
 @import './sorting/sorting';
+@import './grid/grid';
+@import './form/form';
+@import './counter/counter';
 
 @import './articles/article-catalog';
 @import './articles/article-product';
@@ -19,3 +22,6 @@
 @import './articles/article-post';
 @import './articles/article-brand';
 @import './articles/article-review';
+@import './articles/article-info';
+@import './articles/article-product-info';
+@import './articles/article-cart-el';

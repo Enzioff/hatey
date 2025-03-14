@@ -1,0 +1,133 @@
+.cart-block {
+  align-items: start;
+
+  &__detail,
+  &__info {
+    width: 100%;
+    background-color: $white;
+    border-radius: 10px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+
+    @include r($mobile) {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $black;
+
+    @include r($mobile) {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #D9E6EF;
+
+    @include r($mobile) {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 40px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    border-bottom: 1px solid #D9E6EF;
+
+    @include r($mobile) {
+      padding: 20px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+
+    span {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: $red-light;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 8px;
+    height: 8px;
+    fill: $red-light;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: $gray-black;
+
+    &--accent {
+      text-align: right;
+      color: $black;
+    }
+
+    &--price {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: right;
+      color: $black;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    padding-top: 32px;
+
+    @include r($mobile) {
+      padding-top: 20px;
+    }
+
+    .button {
+      padding: 20px;
+      width: 100%;
+      border-radius: 100px;
+
+      @include r($mobile) {
+        padding: 11px;
+        border-radius: 22px;
+      }
+    }
+  }
+}

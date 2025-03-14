@@ -145,13 +145,14 @@ class Slider {
         const thumbSwiper = thumb.querySelector('.swiper');
         
         const thumbSlider = new Swiper(thumbSwiper, {
-            slidesPerView: 3,
-            spaceBetween: 8,
-            breakpoints: {
-                1199: {
-                    spaceBetween: 30,
-                }
-            }
+            modules: [Navigation],
+            slidesPerView: 5,
+            spaceBetween: 20,
+            navigation: {
+                prevEl: this.buttonPrev,
+                nextEl: this.buttonNext,
+                disabledClass: 'slider__btn--disabled'
+            },
         })
         
         new Swiper(slider, {

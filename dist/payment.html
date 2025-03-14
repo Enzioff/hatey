@@ -238,123 +238,88 @@
     <div class="container">
         <div class="breadcrumbs">
             <a href="#" class="breadcrumbs__link">Главная</a>
-            <span class="breadcrumbs__link">Каталог</span>
+            <a href="#" class="breadcrumbs__link">Корзина</a>
+            <span class="breadcrumbs__link">Оформление заказа</span>
         </div>
         <div class="head-block">
-            <h2 class="title">Каталог</h2>
+            <h2 class="title">Оформление заказа</h2>
         </div>
-        <div class="catalog-index">
-            <div class="catalog-index__list">
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-1.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Фасадная плитка</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-2.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Фасадный кирпич</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-3.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Брусчатка и плитка для
-                        мощения</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-4.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Ступени, напольная
-                        плитка, уличные
-                        покрытия</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-5.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Керамические элементы</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-6.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Кровля</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-7.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Сухие смеси</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-8.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Изоляционные
-                        материалы</h3>
-                </a>
-                <a href="#" class="catalog-index__link">
-                    <picture class="catalog-index__picture">
-                        <img src="./assets/images/img-9.png" alt="">
-                    </picture>
-                    <h3 class="catalog-index__title">Система навесного
-                        фасада</h3>
-                </a>
+        <form action="#" class="payment grid">
+            <div class="payment__info">
+                <div class="payment__block">
+                    <h3 class="payment__title">Способ доставки</h3>
+                    <div class="payment__wrapper">
+                        <label class="payment__label">
+                            <input class="radio" type="radio" name="DELIVERY_TYPE" value="pickup" checked="checked">
+                            <span>Самовывоз</span>
+                        </label>
+                        <p class="payment__text payment__text--accent">Бесплатно</p>
+                    </div>
+                    <p class="payment__text">
+                        Вы можете самостоятельно забрать заказ из нашего магазина
+                    </p>
+                </div>
+                <div class="payment__block">
+                    <h3 class="payment__title">Оплата</h3>
+                    <div class="payment__wrapper">
+                        <label class="payment__label">
+                            <input class="radio" type="radio" name="PAYMENT_TYPE" value="cash" checked="checked">
+                            <span>Наличными</span>
+                        </label>
+                    </div>
+                    <p class="payment__text">
+                        Оплата производится наличными деньгами, в момент получения заказа. Подтверждением вашей оплаты
+                        является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.
+                    </p>
+                </div>
+                <div class="payment__block">
+                    <h3 class="payment__title mb-4">Покупатель</h3>
+                    <div class="payment__list">
+                        <input class="input input--default" type="text" placeholder="Введите ваше имя">
+                        <input class="input input--default" type="email" placeholder="Введите ваш E-mail">
+                        <input class="input input--default" type="tel" placeholder="Введите ваш номер телефона">
+                        <textarea class="input input--default input--area" placeholder="Введите ваш комментарий к заказу"></textarea>
+                    </div>
+                </div>
+                <div class="payment__block payment__block--collapse">
+                    <h3 class="payment__title">Тип покупателя</h3>
+                    <div class="payment__wrapper">
+                        <label class="payment__label">
+                            <input class="radio" type="radio" name="PERSON_TYPE" value="fiz" checked="checked">
+                            <span>Физическое лицо</span>
+                        </label>
+                        <label class="payment__label">
+                            <input class="radio" type="radio" name="PERSON_TYPE" value="jur">
+                            <span>Юридическое лицо</span>
+                        </label>
+                    </div>
+                </div>
             </div>
-            <div class="editor editor--text">
-                <p>
-                    Успех строительно-ремонтных работ зависит не только от работы мастера, но и от качества используемых
-                    материалов и комплектующих. Поэтому важно купить качественные строительные материалы от проверенных
-                    производителей — только тогда у вас получится добиться желаемого результата при строительстве
-                    дома.<br>
-                    В нашем каталоге представлена продукция от ведущих отечественных и европейских
-                    заводов-производителей, которые давно зарекомендовали себя в сфере производства строительных
-                    материалов — это гарантирует высокое качество продукции.<br>
-                    Вы можете купить строительные материалы
-                    оптом в Калининграде для проведения внутренних или наружных работ при строительстве дома или
-                    оформления придомовой территории. В ассортименте магазина вы найдете:.
-                </p>
-                <br>
-                <ul>
-                    <li>
-                        Плитку для отделки фасадов — клинкерную, сланец, ручной формовки, а также вентилируемые фасады.
-                    </li>
-                    <li>
-                        Кирпич для внешних отделочных работ — клинкерный, керамический и ручной формовки.
-                    </li>
-                    <li>
-                        Материалы для мощения — бетонную плитку и клинкерную брусчатку.
-                    </li>
-                    <li>
-                        Материалы для оформления ступеней, полов и уличных территорий.
-                    </li>
-                    <li>
-                        Керамические элементы, предназначенные для завершающей отделки отдельных элементов дома или ограждений.
-                    </li>
-                    <li>
-                        Материалы для отделки кровли — керамическую и металлочерепицу, сланцевую кровлю, а также аксессуары для кровли.
-                    </li>
-                    <li>
-                        Изоляционные материалы для защиты дома от теплопотерь и скопления влаги.
-                    </li>
-                    <li>
-                        Материалы и комплектующие для системы навесного фасада.
-                    </li>
-                    <li>
-                        Сухие смеси для проведения внутренних и наружных работ.
-                    </li>
-                </ul>
-                <br>
-                <p>
-                    Купить необходимые строительные материалы вы можете как посетив наш магазин лично, так и оформив заказ на нашем сайте. Вы всегда можете связаться с нашим
-                    менеджером по телефону <a href="tel:+74012664222">+7 (4012) 664-222</a> для уточнения деталей заказа или получения консультации по продукции.
-                </p>
+            <div class="payment__total">
+               <div class="payment__header">
+                   <h3 class="payment__title">Ваш заказ</h3>
+               </div>
+                <div class="payment__content">
+                    <div class="payment__item">
+                        <p class="payment__text">Товаров на</p>
+                        <p class="payment__text payment__text--black">360,00 ₽</p>
+                    </div>
+                    <div class="payment__item">
+                        <p class="payment__text payment__text--big">Итого</p>
+                        <p class="payment__text payment__text--big payment__text--black">360,00 ₽</p>
+                    </div>
+                </div>
+                <div class="payment__footer">
+                    <label class="payment__agree">
+                        <input type="checkbox" class="checkbox">
+                        <span>Согласен с обработкой персональных данных</span>
+                    </label>
+                    <button class="payment__button button">
+                        <span>Купить товар</span>
+                    </button>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </section>
 

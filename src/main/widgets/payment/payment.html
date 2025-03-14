@@ -1,0 +1,88 @@
+<section class="section section--top-page">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+            <a href="#" class="breadcrumbs__link">Корзина</a>
+            <span class="breadcrumbs__link">Оформление заказа</span>
+        </div>
+        <div class="head-block">
+            <h2 class="title">Оформление заказа</h2>
+        </div>
+        <form action="#" class="payment grid">
+            <div class="payment__info">
+                <div class="payment__block">
+                    <h3 class="payment__title">Способ доставки</h3>
+                    <div class="payment__wrapper">
+                        <label class="payment__label">
+                            <input class="radio" type="radio" name="DELIVERY_TYPE" value="pickup" checked="checked">
+                            <span>Самовывоз</span>
+                        </label>
+                        <p class="payment__text payment__text--accent">Бесплатно</p>
+                    </div>
+                    <p class="payment__text">
+                        Вы можете самостоятельно забрать заказ из нашего магазина
+                    </p>
+                </div>
+                <div class="payment__block">
+                    <h3 class="payment__title">Оплата</h3>
+                    <div class="payment__wrapper">
+                        <label class="payment__label">
+                            <input class="radio" type="radio" name="PAYMENT_TYPE" value="cash" checked="checked">
+                            <span>Наличными</span>
+                        </label>
+                    </div>
+                    <p class="payment__text">
+                        Оплата производится наличными деньгами, в момент получения заказа. Подтверждением вашей оплаты
+                        является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.
+                    </p>
+                </div>
+                <div class="payment__block">
+                    <h3 class="payment__title mb-4">Покупатель</h3>
+                    <div class="payment__list">
+                        <input class="input input--default" type="text" placeholder="Введите ваше имя">
+                        <input class="input input--default" type="email" placeholder="Введите ваш E-mail">
+                        <input class="input input--default" type="tel" placeholder="Введите ваш номер телефона">
+                        <textarea class="input input--default input--area" placeholder="Введите ваш комментарий к заказу"></textarea>
+                    </div>
+                </div>
+                <div class="payment__block payment__block--collapse">
+                    <h3 class="payment__title">Тип покупателя</h3>
+                    <div class="payment__wrapper">
+                        <label class="payment__label">
+                            <input class="radio" type="radio" name="PERSON_TYPE" value="fiz" checked="checked">
+                            <span>Физическое лицо</span>
+                        </label>
+                        <label class="payment__label">
+                            <input class="radio" type="radio" name="PERSON_TYPE" value="jur">
+                            <span>Юридическое лицо</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="payment__total">
+               <div class="payment__header">
+                   <h3 class="payment__title">Ваш заказ</h3>
+               </div>
+                <div class="payment__content">
+                    <div class="payment__item">
+                        <p class="payment__text">Товаров на</p>
+                        <p class="payment__text payment__text--black">360,00 ₽</p>
+                    </div>
+                    <div class="payment__item">
+                        <p class="payment__text payment__text--big">Итого</p>
+                        <p class="payment__text payment__text--big payment__text--black">360,00 ₽</p>
+                    </div>
+                </div>
+                <div class="payment__footer">
+                    <label class="payment__agree">
+                        <input type="checkbox" class="checkbox">
+                        <span>Согласен с обработкой персональных данных</span>
+                    </label>
+                    <button class="payment__button button">
+                        <span>Купить товар</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

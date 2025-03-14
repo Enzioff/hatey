@@ -1,0 +1,43 @@
+.counter {
+  display: flex;
+  width: 130px;
+  min-width: 100px;
+  padding: 7px 10px;
+  background-color: $white;
+  border: 1px solid $gray-black;
+  border-radius: 100px;
+
+  &__icon {
+    display: flex;
+    width: 10px;
+    height: 10px;
+  }
+
+  &__btn,
+  &__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  &__btn {
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+
+  &__input {
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    color: $black;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}

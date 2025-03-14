@@ -1,0 +1,34 @@
+.radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 2px solid #79909C;
+  transition: .2s linear;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: transparent;
+    transition: .2s linear;
+  }
+
+  &:checked {
+    border-color: $blue;
+
+    &::before {
+      background-color: $blue;
+    }
+
+    & ~ span {
+      color: $blue;
+    }
+  }
+}
