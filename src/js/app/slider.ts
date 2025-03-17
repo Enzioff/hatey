@@ -90,8 +90,8 @@ class Slider {
         const slider = this.el.querySelector('.swiper');
         new Swiper(slider, {
             modules: [Navigation, Pagination, Autoplay],
-            slidesPerView: this.slidesCount ? this.slidesCount : 1,
-            spaceBetween: this.offset ? this.offset : 40,
+            slidesPerView: 'auto',
+            spaceBetween: 16,
             navigation: {
                 prevEl: this.buttonPrev,
                 nextEl: this.buttonNext,
@@ -106,6 +106,12 @@ class Slider {
             on: {
                 init: (swiper: Swiper) => {
                     swiper.update()
+                }
+            },
+            breakpoints: {
+                1200: {
+                    slidesPerView: this.slidesCount ? this.slidesCount : 1,
+                    spaceBetween: this.offset ? this.offset : 40,
                 }
             }
         })
@@ -147,12 +153,17 @@ class Slider {
         const thumbSlider = new Swiper(thumbSwiper, {
             modules: [Navigation],
             slidesPerView: 5,
-            spaceBetween: 20,
+            spaceBetween: 10,
             navigation: {
                 prevEl: this.buttonPrev,
                 nextEl: this.buttonNext,
                 disabledClass: 'slider__btn--disabled'
             },
+            breakpoints: {
+                1199: {
+                    spaceBetween: 20,
+                }
+            }
         })
         
         new Swiper(slider, {

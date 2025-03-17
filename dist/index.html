@@ -60,7 +60,7 @@
                 <a href="./" class="logo">
                     <img src="./assets/images/logo.svg" alt="">
                 </a>
-                <div class="contact-element contact-element--center">
+                <div class="contact-element contact-element--center mob-hidden">
                     <a href="#" class="contact-element__link contact-element__link--bold">
                         <svg class="contact-element__icon">
                             <use xlink:href="./assets/sprite.svg#icon-tel"></use>
@@ -69,7 +69,7 @@
                     </a>
                     <p class="contact-element__text">Звоните с 9:00 до 18:00</p>
                 </div>
-                <ul class="social">
+                <ul class="social mob-hidden">
                     <li class="social__item">
                         <a href="#" class="social__link">
                             <img src="./assets/images/inst.svg" alt="">
@@ -86,7 +86,7 @@
                         </a>
                     </li>
                 </ul>
-                <form action="#" class="search">
+                <form action="#" class="search mob-hidden">
                     <label class="search__block">
                         <input class="search__input" type="search" placeholder="Поиск...">
                         <button class="search__button" type="submit">
@@ -96,7 +96,7 @@
                         </button>
                     </label>
                 </form>
-                <div class="user-menu">
+                <div class="user-menu mob-hidden">
                     <a href="#" class="user-menu__item">
                         <svg class="user-menu__icon">
                             <use xlink:href="./assets/sprite.svg#icon-cart"></use>
@@ -114,6 +114,28 @@
                             <use xlink:href="./assets/sprite.svg#icon-heart"></use>
                         </svg>
                         <span class="bubble">0</span>
+                    </a>
+                </div>
+                <div class="mobile-nav">
+                    <div class="burger" data-burger>
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-burger"></use>
+                        </svg>
+                    </div>
+                    <a href="#" class="mobile-nav__link">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-search-2"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="mobile-nav__link">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-user"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="mobile-nav__link">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-cart-2"></use>
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -271,7 +293,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slider slider--ease slider--visible" data-slider="default" data-slides="4">
+            <div class="slider slider--ease slider--mob-auto slider--visible" data-slider="default" data-slides="4">
                 <div class="swiper">
                     <div class="swiper-wrapper mb-30">
                         <div class="swiper-slide">
@@ -314,7 +336,7 @@
                                     <picture class="article-catalog__picture">
                                         <img src="./assets/images/img-3.png" alt="">
                                     </picture>
-                                    <h3 class="article-catalog__title">Брусчатка и плитка для<br>мощения</h3>
+                                    <h3 class="article-catalog__title">Брусчатка и плитка для<br class="mob-hidden">мощения</h3>
                                 </div>
                                 <div class="article-catalog__menu">
                                     <ul class="article-catalog__list">
@@ -350,7 +372,7 @@
                                         <img src="./assets/images/img-4.png" alt="">
                                     </picture>
                                     <h3 class="article-catalog__title">
-                                        Ступени, напольная плитка,<br>
+                                        Ступени, напольная плитка,<br class="mob-hidden">
                                         уличные покрытия
                                     </h3>
                                 </div>
@@ -557,7 +579,7 @@
 
     <section class="section section--light">
     <div class="container">
-        <div class="head-block">
+        <div class="head-block head-block--mob-col">
             <h2 class="title"><span>Лучшие</span> предложения</h2>
             <a href="#" class="total-link">
                 <span>
@@ -1103,7 +1125,7 @@
     <section class="section section--light">
     <div class="container">
         <div class="head-block">
-            <h1 class="title">Торговый дом хатей — лучшее для вашего <span>дома</span></h1>
+            <h1 class="title">Торговый дом хатей — <br class="desktop-hidden"> лучшее для вашего <span>дома</span></h1>
         </div>
         <div class="about-block">
             <div class="editor">
@@ -1450,7 +1472,7 @@
         </div>
         <div class="slider slider--ease slider--visible" data-slider="default" data-slides="6" data-offset="15" data-auto>
             <div class="swiper">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper mbm-10">
                     <div class="swiper-slide">
                         <a href="" class="article-brand">
                             <picture class="article-brand__picture">
@@ -1536,6 +1558,7 @@
                         </a>
                     </div>
                 </div>
+                <div class="swiper-pagination desktop-hidden"></div>
                 <div class="swiper-control">
                     <button class="swiper-btn swiper-btn--prev">
                         <svg>
@@ -1558,8 +1581,25 @@
     <div class="container">
         <div class="footer__wrapper">
             <div class="footer__main">
+                <ul class="social desktop-hidden">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="./assets/images/inst.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="./assets/images/watsapp.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="./assets/images/viber.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
                 <div class="footer__col">
-                    <a href="./" class="logo">
+                    <a href="./" class="logo mob-hidden">
                         <img src="./assets/images/logo.svg" alt="">
                     </a>
                     <nav class="nav nav--footer">
@@ -1595,7 +1635,7 @@
                         </a>
                     </nav>
                 </div>
-                <div class="footer__menu">
+                <div class="footer__menu  mob-hidden">
                     <div class="footer__list">
                         <div class="footer__item">
                             <a href="#" class="footer__link footer__link--bold">компания</a>
@@ -1662,7 +1702,7 @@
                         </a>
                         <p class="contact-element__text">Пн-Пт: 9:00-18:00. Сб: 10:00-15:00</p>
                     </div>
-                    <ul class="social">
+                    <ul class="social mob-hidden">
                         <li class="social__item">
                             <a href="#" class="social__link">
                                 <img src="./assets/images/inst.svg" alt="">

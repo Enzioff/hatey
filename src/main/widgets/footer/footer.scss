@@ -12,6 +12,10 @@
     background-color: $white;
     border-radius: 10px;
     box-shadow: 0 4px 50px 0 #0000000D;
+
+    @include r($mobile) {
+      padding: 30px 20px 14px;
+    }
   }
 
   &__nav {
@@ -23,12 +27,21 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    @include r($mobile) {
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
   }
 
   &__meta {
     display: flex;
     flex-direction: column;
     gap: 56px;
+
+    @include r($mobile) {
+      gap: 20px;
+    }
   }
 
   &__menu {

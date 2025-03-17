@@ -18,6 +18,10 @@
 
     background-color: transparent;
     cursor: pointer;
+
+    @include r($mobile) {
+      display: none;
+    }
   }
 
   &__wrapper {
@@ -48,6 +52,12 @@
     background-color: $white;
     border-radius: 8px;
     cursor: pointer;
+
+    @include r($mobile) {
+      &:nth-child(n+5) {
+        display: none;
+      }
+    }
 
     &.active {
       color: $white;

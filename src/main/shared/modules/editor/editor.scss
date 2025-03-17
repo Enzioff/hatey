@@ -5,6 +5,12 @@
     font-size: 18px;
     line-height: 26px;
     color: $text;
+
+    @include r($mobile) {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   p {
@@ -31,11 +37,21 @@
     font-size: 20px;
     line-height: 28px;
     color: $black;
+
+    @include r($mobile) {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+    }
   }
 
   &--text {
     li, a, p, span {
       color: $black;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
     }
   }
 }

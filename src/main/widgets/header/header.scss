@@ -3,6 +3,11 @@
   flex-direction: column;
   margin-bottom: 40px;
 
+  @include r($mobile) {
+    padding-top: 16px;
+    margin-bottom: 30px;
+  }
+
   &__wrapper {
     position: relative;
     background-color: $white;
@@ -17,5 +22,15 @@
     gap: 20px;
     padding: 18px 20px;
     border-bottom: 1px solid #ECEFF1;
+
+    @include r($mobile) {
+      padding: 10px 15px;
+    }
+  }
+
+  &__nav {
+    @include r($mobile) {
+      display: none;
+    }
   }
 }

@@ -7,6 +7,11 @@
   border-radius: 10px;
   border: 1px solid #D9E6EF;
 
+  @include r($mobile) {
+    gap: 20px;
+    padding: 20px;
+  }
+
   &__header {
     display: flex;
     align-items: center;
@@ -19,6 +24,11 @@
     justify-content: center;
     width: 88px;
     height: 40px;
+
+    @include r($mobile) {
+      width: 66px;
+      height: 30px;
+    }
 
     img {
       @include coverFull();
@@ -50,6 +60,10 @@
     line-height: 100%;
     color: $black;
 
+    @include r($mobile) {
+      display: block;
+    }
+
     a {
       margin-left: auto;
       font-weight: 600;
@@ -58,6 +72,11 @@
       color: $blue;
       &:hover {
         text-decoration: underline;
+      }
+
+      @include r($mobile) {
+        display: block;
+        margin-top: 10px;
       }
     }
 

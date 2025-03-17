@@ -4,6 +4,10 @@
   gap: 10px;
   margin-bottom: 30px;
 
+  @include r($mobile) {
+    display: none;
+  }
+
   &__link {
     display: flex;
     align-items: center;

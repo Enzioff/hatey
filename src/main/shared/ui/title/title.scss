@@ -5,6 +5,12 @@
   text-transform: uppercase;
   color: $black;
 
+  @include r($mobile) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   span {
     color: #D10317;
   }

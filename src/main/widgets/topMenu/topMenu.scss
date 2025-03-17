@@ -1,6 +1,10 @@
 .top-menu {
   padding: 20px 0 16px;
 
+  @include r($mobile) {
+    display: none;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;

@@ -4,12 +4,18 @@
   justify-content: space-between;
   gap: 20px;
 
+  @include r($mobile) {
+    flex-direction: column-reverse;
+  }
+
   &__tags {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 8px 10px;
     max-width: 620px;
-
+    @include r($mobile) {
+      gap: 8px;
+    }
   }
 }

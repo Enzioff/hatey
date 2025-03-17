@@ -13,6 +13,14 @@
     }
   }
 
+  &--mob-auto {
+    .swiper-slide {
+      @include r($mobile) {
+        width: auto !important;
+      }
+    }
+  }
+
   &--review {
     .swiper-control {
       width: calc(100% + 15px);
@@ -91,6 +99,10 @@
   transform: translateY(-50%);
   z-index: 1;
   pointer-events: none;
+
+  @include r($mobile) {
+    display: none;
+  }
 }
 
 .swiper-btn {

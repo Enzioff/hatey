@@ -1,6 +1,10 @@
 .section {
   padding: 70px 0;
 
+  @include r($mobile) {
+    padding: 40px 0;
+  }
+
   &--intro {
     padding: 0;
   }
@@ -12,5 +16,9 @@
     margin-top: -10px;
     padding-top: 0;
     padding-bottom: 70px;
+
+    @include r($mobile) {
+      padding-bottom: 30px;
+    }
   }
 }

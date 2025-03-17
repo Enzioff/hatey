@@ -26,6 +26,8 @@ $grad-blue: linear-gradient(100.82deg, #2196F3 15.04%, #1976D2 89.25%);
 
 $mobile: 1199;
 
+$mob-min: 767;
+
 // Миксины
 @mixin r($width) {
   @media only screen and (max-width: $width+ "px") {
@@ -72,6 +74,28 @@ $mobile: 1199;
 }
 
 // Генераторы
+@mixin order($num) {
+  order: $num;
+}
+
+@for $i from 1 through 200 {
+  .order-#{$i} {
+    @include order($i);
+  }
+}
+
+@mixin order-mob($num) {
+  @include r($mobile) {
+    order: $num;
+  }
+}
+
+@for $i from 1 through 200 {
+  .order-mob-#{$i} {
+    @include order-mob($i);
+  }
+}
+
 @mixin pt($size) {
   padding-top: math.div($size, 16) * 1rem;
 }

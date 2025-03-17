@@ -22,3 +22,7 @@ import "./icon-cart-btn.svg";
 import "./icon-cross.svg";
 import "./icon-plus.svg";
 import "./icon-minus.svg";
+import "./icon-burger.svg";
+import "./icon-search-2.svg";
+import "./icon-cart-2.svg";
+import "./icon-user.svg";

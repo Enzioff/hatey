@@ -4,16 +4,27 @@
   align-items: start;
   gap: 24px;
 
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   &__list {
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1px;
+
+    @include r($mob-min) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
   }
 }

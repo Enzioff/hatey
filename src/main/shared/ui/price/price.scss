@@ -4,9 +4,29 @@
   line-height: 24px;
   color: $blue;
 
+  @include r($mobile) {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+  }
+
   &--big {
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
+
+    @include r($mobile) {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 100%;
+    }
+
+    span {
+      @include r($mobile) {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+      }
+    }
   }
 }

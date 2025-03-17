@@ -1,0 +1,19 @@
+.mobile-nav {
+  display: none;
+  align-items: center;
+  gap: 12px;
+
+  @include r($mobile) {
+    display: flex;
+  }
+
+  &__link {
+    display: flex;
+
+    svg {
+      display: flex;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

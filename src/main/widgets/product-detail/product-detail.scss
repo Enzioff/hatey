@@ -8,6 +8,11 @@
     background-color: $white;
     border: 1px solid #D9E6EF;
     border-radius: 10px;
+
+    @include r($mobile) {
+      gap: 10px;
+      padding: 20px;
+    }
   }
 
   &__picture {
@@ -17,7 +22,12 @@
     width: 100%;
     height: 420px;
     border-radius: 6px;
+    background-color: #F7F7F7;
     overflow: hidden;
+
+    @include r($mobile) {
+      height: 200px;
+    }
 
     img {
       @include coverFull();
@@ -25,6 +35,12 @@
 
     &--small {
       height: 100px;
+
+      @include r($mobile) {
+        height: auto;
+        max-height: 100px;
+        aspect-ratio: 1/1;
+      }
     }
   }
 
@@ -48,6 +64,10 @@
     flex-direction: column;
     gap: 20px;
     overflow: hidden;
+
+    @include r($mobile) {
+      gap: 10px;
+    }
   }
 
   &__block {
@@ -58,8 +78,16 @@
     border-radius: 10px;
     border: 1px solid #D9E6EF;
 
+    @include r($mobile) {
+      padding: 20px;
+    }
+
     &--small {
       padding: 30px 40px;
+
+      @include r($mobile) {
+        padding: 20px;
+      }
     }
   }
 
@@ -74,6 +102,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
+
+    @include r($mobile) {
+      gap: 20px;
+    }
   }
 
   &__info-block {
@@ -95,6 +127,12 @@
     font-size: 20px;
     line-height: 28px;
     color: $black;
+
+    @include r($mobile) {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+    }
   }
 
   &__list {

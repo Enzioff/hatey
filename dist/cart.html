@@ -60,7 +60,7 @@
                 <a href="./" class="logo">
                     <img src="./assets/images/logo.svg" alt="">
                 </a>
-                <div class="contact-element contact-element--center">
+                <div class="contact-element contact-element--center mob-hidden">
                     <a href="#" class="contact-element__link contact-element__link--bold">
                         <svg class="contact-element__icon">
                             <use xlink:href="./assets/sprite.svg#icon-tel"></use>
@@ -69,7 +69,7 @@
                     </a>
                     <p class="contact-element__text">Звоните с 9:00 до 18:00</p>
                 </div>
-                <ul class="social">
+                <ul class="social mob-hidden">
                     <li class="social__item">
                         <a href="#" class="social__link">
                             <img src="./assets/images/inst.svg" alt="">
@@ -86,7 +86,7 @@
                         </a>
                     </li>
                 </ul>
-                <form action="#" class="search">
+                <form action="#" class="search mob-hidden">
                     <label class="search__block">
                         <input class="search__input" type="search" placeholder="Поиск...">
                         <button class="search__button" type="submit">
@@ -96,7 +96,7 @@
                         </button>
                     </label>
                 </form>
-                <div class="user-menu">
+                <div class="user-menu mob-hidden">
                     <a href="#" class="user-menu__item">
                         <svg class="user-menu__icon">
                             <use xlink:href="./assets/sprite.svg#icon-cart"></use>
@@ -114,6 +114,28 @@
                             <use xlink:href="./assets/sprite.svg#icon-heart"></use>
                         </svg>
                         <span class="bubble">0</span>
+                    </a>
+                </div>
+                <div class="mobile-nav">
+                    <div class="burger" data-burger>
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-burger"></use>
+                        </svg>
+                    </div>
+                    <a href="#" class="mobile-nav__link">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-search-2"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="mobile-nav__link">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-user"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="mobile-nav__link">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-cart-2"></use>
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -256,14 +278,16 @@
                 </div>
                 <div class="cart-block__content">
                     <article class="article-cart-el">
-                        <picture class="article-cart-el__picture">
-                            <img src="./assets/images/detail-1.png" alt="">
-                        </picture>
-                        <div class="article-cart-el__info">
-                            <a href="#" class="article-cart-el__title">
-                                Клинкер тротуарный темно-красный флэш “Глазго”
-                            </a>
-                            <p class="article-cart-el__text">Вес: 0 кг</p>
+                        <div class="article-cart-el__preview">
+                            <picture class="article-cart-el__picture">
+                                <img src="./assets/images/detail-1.png" alt="">
+                            </picture>
+                            <div class="article-cart-el__info">
+                                <a href="#" class="article-cart-el__title">
+                                    Клинкер тротуарный темно-красный флэш “Глазго”
+                                </a>
+                                <p class="article-cart-el__text">Вес: 0 кг</p>
+                            </div>
                         </div>
                         <div class="article-cart-el__detail">
                             <div class="article-cart-el__meta">
@@ -286,31 +310,35 @@
                         </div>
                     </article>
                     <article class="article-cart-el">
-                        <picture class="article-cart-el__picture">
-                            <img src="./assets/images/detail-1.png" alt="">
-                        </picture>
-                        <div class="article-cart-el__info">
-                            <a href="#" class="article-cart-el__title">
-                                Клинкер тротуарный темно-красный флэш “Глазго”
-                            </a>
-                            <p class="article-cart-el__text">Вес: 0 кг</p>
+                        <div class="article-cart-el__preview">
+                            <picture class="article-cart-el__picture">
+                                <img src="./assets/images/detail-1.png" alt="">
+                            </picture>
+                            <div class="article-cart-el__info">
+                                <a href="#" class="article-cart-el__title">
+                                    Клинкер тротуарный темно-красный флэш “Глазго”
+                                </a>
+                                <p class="article-cart-el__text">Вес: 0 кг</p>
+                            </div>
                         </div>
-                        <div class="article-cart-el__meta">
-                            <p class="article-cart-el__price">360,00 ₽</p>
-                            <p class="article-cart-el__text">Цена за 1 шт</p>
-                        </div>
-                        <div class="counter">
-                            <a href="#" class="counter__btn counter__btn--minus">
-                                <svg class="counter__icon">
-                                    <use xlink:href="./assets/sprite.svg#icon-minus"></use>
-                                </svg>
-                            </a>
-                            <input type="number" class="counter__input" value="1">
-                            <a href="#" class="counter__btn counter__btn--plus">
-                                <svg class="counter__icon">
-                                    <use xlink:href="./assets/sprite.svg#icon-plus"></use>
-                                </svg>
-                            </a>
+                        <div class="article-cart-el__detail">
+                            <div class="article-cart-el__meta">
+                                <p class="article-cart-el__price">360,00 ₽</p>
+                                <p class="article-cart-el__text">Цена за 1 шт</p>
+                            </div>
+                            <div class="counter">
+                                <a href="#" class="counter__btn counter__btn--minus">
+                                    <svg class="counter__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-minus"></use>
+                                    </svg>
+                                </a>
+                                <input type="number" class="counter__input" value="1">
+                                <a href="#" class="counter__btn counter__btn--plus">
+                                    <svg class="counter__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-plus"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -562,8 +590,25 @@
     <div class="container">
         <div class="footer__wrapper">
             <div class="footer__main">
+                <ul class="social desktop-hidden">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="./assets/images/inst.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="./assets/images/watsapp.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="./assets/images/viber.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
                 <div class="footer__col">
-                    <a href="./" class="logo">
+                    <a href="./" class="logo mob-hidden">
                         <img src="./assets/images/logo.svg" alt="">
                     </a>
                     <nav class="nav nav--footer">
@@ -599,7 +644,7 @@
                         </a>
                     </nav>
                 </div>
-                <div class="footer__menu">
+                <div class="footer__menu  mob-hidden">
                     <div class="footer__list">
                         <div class="footer__item">
                             <a href="#" class="footer__link footer__link--bold">компания</a>
@@ -666,7 +711,7 @@
                         </a>
                         <p class="contact-element__text">Пн-Пт: 9:00-18:00. Сб: 10:00-15:00</p>
                     </div>
-                    <ul class="social">
+                    <ul class="social mob-hidden">
                         <li class="social__item">
                             <a href="#" class="social__link">
                                 <img src="./assets/images/inst.svg" alt="">
