@@ -1,0 +1,32 @@
+.usefulInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  @include r($mobile) {
+    gap: 40px;
+  }
+
+  &__list {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px 40px;
+
+    @include r($mob-min) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  &--small {
+    .usefulInfo__list {
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+      @include r($mob-min) {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  }
+}

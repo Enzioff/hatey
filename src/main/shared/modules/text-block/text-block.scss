@@ -1,0 +1,13 @@
+.text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px;
+  background: $white;
+  border-radius: 10px;
+
+  @include r($mobile) {
+    padding: 16px;
+  }
+}

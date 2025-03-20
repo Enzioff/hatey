@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+
+<body>
+<%= htmlWebpackPlugin.options.widgets.topMenu %>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<main class="main">
+    <section class="section section--top-page">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <span class="breadcrumbs__link">Личный кабинет</span>
+            </div>
+            <div class="head-block">
+                <h2 class="title">Личный кабинет</h2>
+            </div>
+            <div class="lk-block">
+                <div class="lk-nav">
+                    <a href="#" class="lk-nav__item active">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-lk-user"></use>
+                        </svg>
+                        <span>Личные данные</span>
+                    </a>
+                    <a href="#" class="lk-nav__item">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-lk-history"></use>
+                        </svg>
+                        <span>История заказов</span>
+                    </a>
+                    <a href="#" class="lk-nav__item">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-lk-contacts"></use>
+                        </svg>
+                        <span>Контакты</span>
+                    </a>
+                    <a href="#" class="lk-nav__item lk-nav__item--exit">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-lk-exit"></use>
+                        </svg>
+                        <span>Выход</span>
+                    </a>
+                </div>
+                <div class="lk-block__element">
+                    <h3 class="lk-block__title">Личные данные</h3>
+                    <form action="#" class="lk-block__form form">
+                        <fieldset class="form__wrapper">
+                            <label class="form__item">
+                                <input type="text" class="input" placeholder="Введите ФИО*">
+                                <span class="mob-hidden">Заполните, чтобы мы знали, как к вам обращаться</span>
+                            </label>
+                            <label class="form__item">
+                                <input type="email" class="input" placeholder="Введите ваш E-mail*">
+                                <span class="mob-hidden">Для отправки уведомлений о статусе заказа. Используйте как логин для входа в личный кабинет</span>
+                            </label>
+                            <label class="form__item">
+                                <input type="tel" class="input" placeholder="Введите ваш телефон*">
+                                <span class="mob-hidden">Необходим для уточнения деталей заказа</span>
+                            </label>
+                            <label>
+                                <span class="form__notation">*Данные обязательные для заполнения</span>
+                            </label>
+                        </fieldset>
+                        <button class="lk-block__button button" type="submit">
+                            <span>сохранить</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.hidden %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

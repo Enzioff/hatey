@@ -26,3 +26,7 @@ import "./icon-burger.svg";
 import "./icon-search-2.svg";
 import "./icon-cart-2.svg";
 import "./icon-user.svg";
+import "./icon-lk-contacts.svg";
+import "./icon-lk-history.svg";
+import "./icon-lk-exit.svg";
+import "./icon-lk-user.svg";

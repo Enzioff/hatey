@@ -1,0 +1,25 @@
+.pictures {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+
+  @include r($mob-min) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+
+    img {
+      @include coverFull();
+    }
+  }
+}

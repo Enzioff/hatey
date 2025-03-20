@@ -1,0 +1,93 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: minmax(400px, 580px) 1fr;
+    gap: 40px;
+
+    @include r($mobile) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include r($mobile) {
+      gap: 20px;
+    }
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  &__head {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: $blue;
+
+    @include r($mobile) {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 100%;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $black;
+
+    @include r($mobile) {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &--small {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 100%;
+      color: $gray-black;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: $white;
+    border-radius: 10px;
+    border: 1px solid #D9E6EF;
+
+    @include r($mobile) {
+      padding: 20px;
+    }
+  }
+
+  &__feedback {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 376px;
+    gap: 40px;
+
+    @include r($mobile) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}

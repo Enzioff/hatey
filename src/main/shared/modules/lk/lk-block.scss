@@ -1,0 +1,68 @@
+.lk-block {
+  display: grid;
+  grid-template-columns: 248px 1fr;
+  align-items: start;
+  gap: 30px;
+
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    padding: 40px;
+    background-color: $white;
+    border-radius: 10px;
+    border: 1px solid #D9E6EF;
+    box-shadow: 0 4px 50px 0 #0000000D;
+    overflow: hidden;
+
+    @include r($mobile) {
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $black;
+
+    @include r($mobile) {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__form {
+    align-items: flex-start;
+
+    .input {
+      padding: 18px 20px;
+      max-width: 376px;
+
+      @include r($mobile) {
+        max-width: 100%;
+      }
+    }
+
+    .form__wrapper {
+      gap: 16px;
+    }
+
+    .form__item {
+      gap: 30px;
+    }
+  }
+
+  &__button {
+    padding: 11px 20px;
+    width: 187px;
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+
+<body>
+<%= htmlWebpackPlugin.options.widgets.topMenu %>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<main class="main">
+    <section class="section section--top-page">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <span class="breadcrumbs__link">Личный кабинет</span>
+            </div>
+            <div class="head-block">
+                <h2 class="title">Личный кабинет</h2>
+            </div>
+            <div class="lk-block">
+                <div class="lk-nav">
+                    <a href="#" class="lk-nav__item">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-lk-user"></use>
+                        </svg>
+                        <span>Личные данные</span>
+                    </a>
+                    <a href="#" class="lk-nav__item active">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-lk-history"></use>
+                        </svg>
+                        <span>История заказов</span>
+                    </a>
+                    <a href="#" class="lk-nav__item">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-lk-contacts"></use>
+                        </svg>
+                        <span>Контакты</span>
+                    </a>
+                    <a href="#" class="lk-nav__item lk-nav__item--exit">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-lk-exit"></use>
+                        </svg>
+                        <span>Выход</span>
+                    </a>
+                </div>
+                <div class="lk-block__element">
+                    <h3 class="lk-block__title">История заказов</h3>
+                    <div class="lk-table">
+                        <table class="lk-table__table">
+                            <thead class="lk-table__head">
+                            <tr class="lk-table__line">
+                                <th class="lk-table__item lk-table__item--head">Номер заказа</th>
+                                <th class="lk-table__item lk-table__item--head">Стоимость</th>
+                                <th class="lk-table__item lk-table__item--head">Дата создания</th>
+                                <th class="lk-table__item lk-table__item--head">Статус</th>
+                            </tr>
+                            </thead>
+                            <tbody class="lk-table__body">
+                            <tr class="lk-table__line">
+                                <td class="lk-table__item">121212/121212</td>
+                                <td class="lk-table__item">360,00 ₽</td>
+                                <td class="lk-table__item">12.12.2024</td>
+                                <td class="lk-table__item">Доставлен</td>
+                            </tr>
+                            <tr class="lk-table__line">
+                                <td class="lk-table__item">121212/121212</td>
+                                <td class="lk-table__item">360,00 ₽</td>
+                                <td class="lk-table__item">12.12.2024</td>
+                                <td class="lk-table__item">Доставлен</td>
+                            </tr>
+                            <tr class="lk-table__line">
+                                <td class="lk-table__item">121212/121212</td>
+                                <td class="lk-table__item">360,00 ₽</td>
+                                <td class="lk-table__item">12.12.2024</td>
+                                <td class="lk-table__item">Доставлен</td>
+                            </tr>
+                            <tr class="lk-table__line">
+                                <td class="lk-table__item">121212/121212</td>
+                                <td class="lk-table__item">360,00 ₽</td>
+                                <td class="lk-table__item">12.12.2024</td>
+                                <td class="lk-table__item">Доставлен</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="lk-block__button button">
+                        <span>показать еще</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.hidden %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

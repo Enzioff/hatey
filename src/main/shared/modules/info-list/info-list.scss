@@ -1,0 +1,33 @@
+.info-list {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 50px 40px;
+
+    @include r($mobile) {
+      gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    @include r($mob-min) {
+      display: none;
+    }
+  }
+
+  &--visible {
+    .info-list__wrapper {
+      @include r($mob-min) {
+        display: grid;
+      }
+    }
+  }
+
+  &--extended {
+    .info-list__wrapper {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+}

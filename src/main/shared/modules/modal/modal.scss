@@ -1,0 +1,53 @@
+.modal {
+  min-width: 456px;
+  max-width: 1200px;
+
+  @include r($mobile) {
+    min-width: 343px;
+    max-width: 343px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $black;
+
+    @include r($mobile) {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.fancybox__content {
+  border-radius: 10px;
+  border: 1px solid #D9E6EF;
+  box-shadow: 0 4px 50px 0 #0000000D;
+}
+
+.fancybox__backdrop {
+  background: rgba($black, 0.6);
+}
+
+.fancybox-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+
+  @include r($mobile) {
+    top: 10px;
+    right: 10px;
+  }
+
+  svg {
+    display: flex;
+    width: 9px;
+    height: 9px;
+  }
+}
